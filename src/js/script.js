@@ -29,7 +29,7 @@ function toggleClass(elementID, key) {
 // Execute commands
 function executeEditorActions(command, arg) {
   if (command) {
-    editorField.document.execCommand(command, false, (arg === "undefined"? null:arg));
+    editorField.document.execCommand(command, false, (arg === undefined ? null : arg));
   }
 }
 // Handle click
