@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Text rich editor</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+  <body onload="enableEditor();">
+    <div class="container">
+      <h1>Text Editor</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="edtorWrapper">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="tool-section">
+                  <button type="button" id="btnBold" class="btn" onclick="handleClick(this.id,'bold')"><i class="fa fa-bold" aria-hidden="true"></i></button>
+                  <button type="button" id="btnItalic" class="btn" onclick="handleClick(this.id,'italic')"><i class="fa fa-italic" aria-hidden="true"></i></button>
+                  <button type="button" id="btnUnderline" class="btn" onclick="handleClick(this.id,'underline')"><i class="fa fa-underline" aria-hidden="true"></i></button>
+                  <button type="button" id="btnStrikeThrough" class="btn" onclick="handleClick(this.id,'strikeThrough')"><i class="fa fa-strikethrough" aria-hidden="true"></i></button>
+                  <button type="button" id="btnImage" class="btn pull-right" onclick="uploadImage(this.id,'insertImage')"><i class="fa fa-file-image-o" aria-hidden="true"></i></button>
+                </div>
+              </div>
+              <div class="panel-body">
+                <iframe name="editorField" width="100%" height="500px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../src/js/script.js"></script>
+</html>

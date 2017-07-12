@@ -1,0 +1,10 @@
+.btn{
+  outline: none !important;
+}
+.btn-on{
+  border: 1px inset;
+  color: #e63e3e;
+}
+.btn-on:focus,.btn-on:hover{
+  color: #e63e3e;
+}
